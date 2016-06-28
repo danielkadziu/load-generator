@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+let LoadGenerator = require('../dist/index').default;
+
+let loadGenerator = new LoadGenerator();
+loadGenerator.main();

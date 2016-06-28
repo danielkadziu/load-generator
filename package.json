@@ -1,0 +1,25 @@
+{
+  "name": "load-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielkadziu/load-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielkadziu/load-generator/issues"
+  },
+  "homepage": "https://github.com/danielkadziu/load-generator#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-symlink": "^1.0.0",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-ts": "^5.5.1",
+    "typescript": "^1.8.10"
+  }
+}
