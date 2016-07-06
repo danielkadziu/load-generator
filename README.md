@@ -1,7 +1,7 @@
-1. Install latest node js.
-2.
-
-npm install -g grunt-cli
-npm install -g typescript
-npm install
-grunt
+1. Install latest node js.<br>
+2.<br>
+<br>
+npm install -g grunt-cli<br>
+npm install -g typescript<br>
+npm install<br>
+grunt<br>

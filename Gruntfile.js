@@ -2,6 +2,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-ts');
 	grunt.loadNpmTasks('grunt-tslint');
 	grunt.loadNpmTasks('grunt-mkdir');
+	grunt.loadNpmTasks('grunt-mocha-test');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-symlink');
 	grunt.loadNpmTasks('grunt-parallelize');
@@ -27,6 +28,14 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		mochaTest: {
+			options: {
+				reporter: 'dot'
+			},
+			test: {
+				src: ['dist/test/**/*.spec.js']
+			}
+		},
 		parallelize: {
 			tslint: {
 				all: 4
@@ -50,6 +59,11 @@ module.exports = function(grunt) {
 		'mkdir:dist',
 		'parallelize:tslint:all',
 		'ts:dist'
+	]);
+	
+	grunt.registerTask('test', [
+		'build',
+		'mochaTest:test'
 	]);
 
 };

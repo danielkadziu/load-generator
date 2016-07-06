@@ -25,5 +25,13 @@
     "tslint": "^3.12.1",
     "tslint-microsoft-contrib": "^2.0.8",
     "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "grunt-mocha-test": "^0.12.7",
+    "mocha": "^2.5.3",
+    "mockery": "^1.7.0",
+    "sinon": "^1.17.4",
+    "tsd": "^0.6.5"
   }
 }
